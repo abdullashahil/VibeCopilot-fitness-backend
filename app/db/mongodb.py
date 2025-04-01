@@ -4,8 +4,6 @@ from app.config import settings
 client = None
 db = None
 
-
-
 async def close_mongo_connection():
     global client
     if client:

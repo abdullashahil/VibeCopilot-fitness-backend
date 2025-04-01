@@ -2,7 +2,6 @@ from fastapi import APIRouter, HTTPException
 from bson import ObjectId
 from typing import List
 from app.models.appointment import Appointment, AppointmentUpdate
-# from app.db.mongodb import db
 from app.db.mongodb import get_db
 
 router = APIRouter()
