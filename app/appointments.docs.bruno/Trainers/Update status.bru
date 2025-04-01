@@ -1,0 +1,17 @@
+meta {
+  name: Update status
+  type: http
+  seq: 2
+}
+
+patch {
+  url: http://localhost:8000/api/trainers/appointments/67eb31c3ae0f26fdbcaede69/status
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "status": "Approved"
+  }
+}

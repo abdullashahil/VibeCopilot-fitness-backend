@@ -1,0 +1,27 @@
+meta {
+  name: Update Each
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8000/api/employees/appointments/67eb25fa4dbb4ea26526f342
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "name": "John Doe",
+      "age": 30,
+      "date": "2024-05-23T17:30:00",
+      "trainer": "Krucal",
+      "gender": "Male",
+      "mobile": "+1 555-123-4567",
+      "reason": "Weight training program",
+      "relationship": "Self",
+      "marital_status": "Married",
+      "preference": "Online",
+      "status": "Pending"
+    }
+}
