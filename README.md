@@ -4,9 +4,9 @@
 A RESTful API backend for managing fitness appointments, built with FastAPI and MongoDB. Provides CRUD operations for appointments with separate employee and trainer functionalities.
 
 ## Deployment Links
-
-**Backend API**: [https://fitness-appointment-api.onrender.com](https://fitness-appointment-api.onrender.com)  
-**Frontend**: [https://fitness-appointment-system.netlify.app](https://fitness-appointment-system.netlify.app)
+(Backend hosting on vercel is having some issues)
+**Backend API**: [https://fitness-appointment-backend.vercel.app/docs](https://fitness-appointment-backend.vercel.app/docs)  
+**Frontend**: [https://fitness-appointment-system.vercel.app](https://fitness-appointment-system.vercel.app)
 
 ## Features
 
