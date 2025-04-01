@@ -83,3 +83,4 @@ logs/
 *.ns
 *.0
 mongod.lock
+.vercel
