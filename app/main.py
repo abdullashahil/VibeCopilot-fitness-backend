@@ -3,6 +3,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes import employees, trainers
 from app.db.mongodb import connect_to_mongo, close_mongo_connection
+from motor.motor_asyncio import AsyncIOMotorDatabase
+from fastapi import Depends
+from app.db.mongodb import get_db
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -27,4 +30,12 @@ app.include_router(trainers.router, prefix="/api/trainers", tags=["Trainers"])
 
 @app.get("/")
 async def root():
-    return {"message": "Helloo, Fitness Appointment API http://localhost:8000/docs"}
+    return {"message": "Fitness Appointment API - Visit /docs for Swagger UI"}
+
+@app.get("/health")
+async def health_check(db: AsyncIOMotorDatabase = Depends(get_db)):
+    try:
+        await db.command("ping")
+        return {"status": "ok", "database": "connected"}
+    except Exception as e:
+        return {"status": "error", "database": str(e)}
