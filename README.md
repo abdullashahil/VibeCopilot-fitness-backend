@@ -5,7 +5,7 @@ A RESTful API backend for managing fitness appointments, built with FastAPI and 
 
 ## Deployment Link
 (Backend hosting on vercel is having some issues)
-**Backend API**: [https://fitness-appointment-backend.vercel.app/docs](https://fitness-appointment-backend.vercel.app/docs)  
+**Backend API**: [https://vibecopilot-fitness-backend.onrender.com/docs](https://vibecopilot-fitness-backend.onrender.com/docs)  
 
 
 ## Features
