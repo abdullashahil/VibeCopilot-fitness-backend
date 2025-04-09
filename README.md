@@ -4,7 +4,6 @@
 A RESTful API backend for managing fitness appointments, built with FastAPI and MongoDB. Provides CRUD operations for appointments with separate employee and trainer functionalities.
 
 ## Deployment Link
-(Backend hosting on vercel is having some issues)
 **Backend API**: [https://vibecopilot-fitness-backend.onrender.com/docs](https://vibecopilot-fitness-backend.onrender.com/docs)  
 
 
